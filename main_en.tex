@@ -1,0 +1,198 @@
+\documentclass[letterpaper,11pt]{report}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+
+\usepackage{PTSans}
+
+\renewcommand*\familydefault{\sfdefault}
+
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome5}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+    \vspace{-4pt}\raggedright\large\bfseries
+}{}{0em}{}[\color{violet}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+    \item\small{
+            {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+            {#1 #2 #3 #4 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{\normalsize#1} & \textbf{\small #2} \\
+        \textit{\normalsize#3} & \textit{\small #4} \\
+
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingAdditional}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \normalsize#1 & \textbf{\small #2} \\
+
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1 & \textbf{\small#2}\\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\lineSeparatedText}[2]{
+        {\textbf{\normalsize{{#1}}}} $|$ {\large{#2}}
+}
+
+\newcommand{\resumeExpItem}[2] {
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+        #1 & \textbf{\small#2}
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\bulletItem}[1]{\item[$\bullet$] #1}
+
+\begin{document}
+
+\begin{center}
+\textbf{\huge Корж Владислав} \\ \vspace{5pt}
+\small
+\textcolor{violet}{\faMobile} \hspace{.5pt} \href{tel:+79129150633}{+7 912 915 06 33}
+$|$
+\textcolor{violet}{\faAt} \hspace{.5pt} \href{mailto:korch937@mail.ru}{korch937@mail.ru}
+$|$
+\textcolor{violet}{\faTelegram} \hspace{.5pt} \href{https://t.me/solddddd}{solddddd}
+$|$
+\textcolor{violet}{\faLinkedin} \hspace{.5pt} \href{https://www.linkedin.com/in/sold666/}{sold666}
+$|$
+\textcolor{violet}{\faGithub} \hspace{.5pt} \href{https://github.com/sold666}{sold666}
+$|$
+\textcolor{violet}{\faMapMarker} \hspace{.5pt} \href{https://maps.app.goo.gl/VvvW63dZxLZH6iVR6}{Санкт-Петербург, Россия}
+\end{center}
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Peter the Great St.Petersburg Polytechnic University}{09.2020 -- 06.2024}
+{Bachelor's Degree, Computer Science and Information Technology, "Software Engineering", GPA: 4.8/5.0}{Saint Petersburg, Russia}
+\resumeSubHeadingListEnd
+
+\section{Additional Education}
+\resumeSubHeadingListStart
+\resumeSubheadingAdditional
+{Course "Java Developer of High-Load Applications" \ VK Educational Center at Polytechnic}{09.2022 -- 02.2023}
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+\resumeSubheadingAdditional
+{Course "Web Development with Java Spring Framework" \ Peter the Great St. Petersburg Polytechnic University}{10.2022}
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+\resumeSubheadingAdditional
+{Course "The basics of Python programming" \ LETPY}{09.2022 -- 02.2023}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeExpItem {\lineSeparatedText{Bercut Ltd.}{Junior QA Engineer}}{07.2023 -- ...}
+\resumeItemListStart
+\bulletItem{Work in the automation testing department involving development of End-to-End tests for a billing system serving one of the leading mobile network operators in the country}
+\bulletItem{Refactoring of testing framework codebase, development of Unit tests, analysis of Allure reports. Working with PostgreSQl databases, builds in Jenkins}
+\bulletItem{Implementation of "LogRunMan" maven library for collecting information on autotest execution}
+\bulletItem{Usage of SOAP, REST API protocols}
+\resumeItemListEnd
+
+\resumeExpItem {\lineSeparatedText{Sreda Solutions}{Intern Software Engineer}}{06.2023 -- 07.2023}
+\resumeItemListStart
+\bulletItem{Participated in backend development of software based on V2x technology}
+\bulletItem{Development of Unit tests, documentation writing}
+\bulletItem{Implementation of bash script using GitLab API for project information gathering}
+\resumeItemListEnd
+
+\resumeExpItem {\lineSeparatedText{Dell EMC}{Intern}}{02.2022 -- 01.2023}
+\resumeItemListStart
+\bulletItem{Integration, configuration, and monitoring of Bare-metal CSI Driver using Prometheus, Grafana technologies}
+\bulletItem{Learning K8s, Docker}
+\bulletItem{Working with bash scripts}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-10pt}
+
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+
+\textbf{Programming Languages:}{ Java, SQL, Python, C++, JavaScript, Bash} \ \vspace{3pt}
+
+\textbf{Technologies:}{ Spring Boot, PostgreSQl, JUnit, Jenkins, Git, SVN, Apache Maven, Docker, K8s, Kafka} \ \vspace{3pt}
+
+\textbf{Tools:}{ IntelliJ IDEA, GitHub, GitLab, Postman, Allure, SoapUI, Jira, Trello, Kaiten, Slack} \ \vspace{3pt}
+
+}}
+\end{itemize}
+\vspace{-10pt}
+
+\section{Additional}
+\begin{itemize}
+\bulletItem{Experience in writing modular and integration tests using Mockito and Hamcrest}
+\bulletItem{Experience in writing documentation using Markdown, AsciiDoc, and LaTeX}
+\bulletItem{Experience in developing and designing frontend of web applications (Node.js, Figma, HTML, CSS, Parcel, Chart.js)}
+\bulletItem{Experience in developing desktop applications (Java, JavaFX, JDBC, Microsoft SQL Server)}
+\bulletItem{Experience in developing Android applications (Kotlin, Gradle, Material Design, Firebase, Figma, Coroutines, Retrofit, Jetpack Navigation, Picasso)}
+\bulletItem{English language proficiency: Intermediate}
+\end{itemize}
+
+\end{document}
