@@ -1,0 +1,129 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[a4paper, top=0.3in, bottom=0.3in, left=0.55in, right=0.55in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{4pt}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+\linespread{1.0}
+
+\titleformat{\section}
+{\scshape\raggedright\large}
+{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{4pt}{2pt}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-3pt}
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+    \vspace{-5pt}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*, itemsep=0.5pt, topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
+\newcommand{\resumeItem}[1]{\item \small{#1}}
+
+\begin{document}
+
+% HEADER
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Vladislav Korzh} & \faEnvelope\ \href{mailto:korch937@gmail.com}{korch937@gmail.com} \\
+\textit{Senior Java Backend Engineer} & \faLinkedin\ \href{https://linkedin.com/in/sold666-java}{linkedin.com/in/sold666-java} \\
+& \faGithub\ \href{https://github.com/sold666}{github.com/sold666} \\
+\end{tabular*}
+
+\vspace{2pt}
+
+% PROFESSIONAL PROFILE
+\section{Professional Profile}
+
+Senior Java Backend Engineer with 6+ years of experience across fintech, LegalTech, telecom, and automotive --- building backend services, internal platforms, and SaaS products from design to production. Deep background in Spring Boot, REST/gRPC APIs, PostgreSQL, Kubernetes, and CI/CD, with recent hands-on work in AI-assisted search using OpenSearch, Qdrant, and RAG flows.
+
+% EXPERIENCE
+\section{Experience}
+
+\vspace{1pt}
+\resumeSubheading
+{Bell Integrator}{Full-time \textbar\ Remote (Serbia)}
+{Senior Java Backend Engineer}{Dec 2025 -- Present}
+\resumeItemListStart
+\resumeItem{Optimized large FNS file processing with chunked execution, bounded parallelism, and MinIO artifacts, reducing processing duration by approx.\ 30--40\%.}
+\resumeItem{Implemented a Hazelcast-based distributed rate limiter for Kubernetes replicas, reducing burst risk against an external API and making timeout behavior diagnosable across pods.}
+\resumeItem{Participated in a platform-wide tech upgrade migrating all services from Java 11 to Java 17 and Spring Boot 2 to Spring Boot 3, including dependency updates and CVE remediation.}
+\resumeItemListEnd
+
+\vspace{5pt}
+\resumeSubheading
+{Fastact}{Part-time \textbar\ Remote (International)}
+{Co-founder / Technical Lead}{Apr 2024 -- Nov 2025}
+\resumeItemListStart
+\resumeItem{Built hybrid retrieval with OpenSearch BM25, Qdrant vector search, score fusion, and citation schema, maintaining citation coverage above approx.\ 85--90\% on pilot scenarios.}
+\resumeItem{Implemented a reactive chat service with Spring WebFlux, SSE streaming, ReactiveMongo, and trace metadata to reduce unsupported AI answers in production.}
+\resumeItem{Delivered subscription and payment flows with YooKassa webhooks, reactive AI Chat, Prometheus/Grafana monitoring, and CI/CD while leading a 7-person team; project received a 1M RUB grant from the Innovation Promotion Foundation.}
+\resumeItemListEnd
+
+\vspace{5pt}
+\resumeSubheading
+{Comarch}{Full-time \textbar\ Remote (Poland)}
+{Java Backend / QA Automation Engineer}{Jul 2022 -- Mar 2024}
+\resumeItemListStart
+\resumeItem{Developed E2E scenarios for account lifecycle, subscriptions, charging, balance changes, and negative billing cases using controlled fixtures and explicit asynchronous waits.}
+\resumeItem{Designed \textit{LogRunMan} as a Maven library for execution metadata, failure classification, flaky-rate analysis, and duration trends across regression suites.}
+\resumeItem{Improved Allure metadata, reason codes, and release summaries, reducing initial failure triage on regression runs by approx.\ 25--35\%.}
+\resumeItemListEnd
+
+\vspace{5pt}
+\resumeSubheading
+{Vector Informatik}{Full-time \textbar\ Remote (Germany)}
+{Java Backend Engineer}{Feb 2021 -- Jun 2022}
+\resumeItemListStart
+\resumeItem{Implemented GitLab API collection flow with service-token authentication, explicit pagination, timeout handling, retryable/non-retryable error mapping, and continuation after single-project failures.}
+\resumeItem{Built normalized repository records and status flags for stale activity, missing owners, archived state, and enrichment failures without converting flags into governance decisions.}
+\resumeItem{Delivered repeatable CSV/Markdown reports with summary counters, unit tests, and documentation, reducing manual audit work for dozens of repositories from hours to minutes.}
+\resumeItemListEnd
+
+\vspace{5pt}
+\resumeSubheading
+{Dell Technologies}{Full-time \textbar\ Remote (Ireland)}
+{Backend / Infrastructure Engineering Intern}{Feb 2020 -- Jan 2021}
+\resumeItemListStart
+\resumeItem{Configured Prometheus scraping for CSI controller, node plugin, and sidecars, verifying target health, scrape errors, and component coverage across Kubernetes workloads.}
+\resumeItem{Built Grafana dashboards for provisioning latency, attach/detach operations, mount failures, and pod restarts, grouped by operation, component, and storage class.}
+\resumeItem{Documented first-response runbooks linking alerts to dashboard panels, Kubernetes events, and pod logs, reducing initial diagnosis from hours to tens of minutes.}
+\resumeItemListEnd
+
+% SKILLS
+\section{Skills}
+
+\textbf{Languages:} Java, Python, TypeScript, SQL \\
+\textbf{Backend:} Spring Boot 3, Spring WebFlux, gRPC, REST API, Kafka, Hibernate/JPA, Maven \\
+\textbf{Data:} PostgreSQL, MongoDB, Redis, S3, OpenSearch, Qdrant \\
+\textbf{DevOps:} Docker, Kubernetes, Jenkins, GitHub Actions, Prometheus, Grafana, Nginx \\
+\textbf{Testing:} JUnit 5, Mockito, Testcontainers, AssertJ \\
+\textbf{AI / Search:} LangChain, RAG, Hugging Face, Claude, DeepSeek, ChatGPT, GitHub Copilot
+
+% EDUCATION
+\section{Education}
+
+\vspace{4pt}
+\resumeSubheading
+{ITMO University}{}
+{Master's Degree, Computer Science, GPA: 5.0/5.0}{Sep 2024 -- Jul 2026}
+
+\vspace{4pt}
+
+\textbf{Courses:} Spring Boot Web Development with Java (Coursera); Java Developer of High-Load Applications (VK Education)
+
+\end{document}
